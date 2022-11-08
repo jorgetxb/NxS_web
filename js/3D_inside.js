@@ -752,6 +752,7 @@ window.addEventListener("click", (event) => {
                 marketing.style.display = "none";
                 examples2.style.display = "none";
                 multimedia.style.display = "none";
+                examples3.style.display = "none";
                 portfolio.style.display = "none";
                 examples1.style.display = "none";
                 whatsapp.style.display = "none";
