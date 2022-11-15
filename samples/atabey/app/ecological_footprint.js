@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }).addTo(map);
 
     var co2_icon = L.icon({
-        iconUrl: '../src/map/co2.svg',
+        iconUrl: './src/map/co2.svg',
     
         iconSize:     [45, 95], // size of the icon
     });

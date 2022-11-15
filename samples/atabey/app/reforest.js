@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     var tree_icon = L.icon({
-        iconUrl: '../src/map/tree_icon.svg',
-        shadowUrl: '../src/map/tree_icon_shadow.svg',
+        iconUrl: './src/map/tree_icon.svg',
+        shadowUrl: './src/map/tree_icon_shadow.svg',
     
         iconSize:     [45, 95], // size of the icon
         shadowSize:   [40, 55], // size of the shadow
