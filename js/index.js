@@ -9,7 +9,7 @@ document.getElementById('close_whatsapp').addEventListener('click', function() {
     document.getElementById('whatsapp').style.display = 'block';
 })
 
-//Activate Interactive Option
+//Activate Classic Option
 document.getElementById("classic_button").addEventListener("click", function() {
     var interactive_elems = document.getElementsByClassName("interactive");
     for (var i = 0; i < interactive_elems.length; i++) {
@@ -17,6 +17,7 @@ document.getElementById("classic_button").addEventListener("click", function() {
     }
     document.getElementById("classic").style.display = "block";
     document.getElementById("ai").style.display = "block";
+    document.querySelector("#ai_trigger").style.display = "block";
     document.getElementById("parallax").scrollIntoView();
     document.getElementById('parallax__layer__7').style.transform = 'translateZ(0px) scale(2)';
     document.getElementById('parallax__layer__7').style.top = '335vh';
@@ -44,53 +45,53 @@ function trigger() {
 
     var logoFooter_creation = document.createElement('div');
     logoFooter_creation.className = 'logo-footer';
-    footer[1].appendChild(logoFooter_creation);
+    footer[2].appendChild(logoFooter_creation);
     var logoFooter = document.querySelectorAll('.logo-footer');
 
     var mail_creation = document.createElement('div');
     mail_creation.className = 'mail';
-    footer[1].appendChild(mail_creation);
+    footer[2].appendChild(mail_creation);
     var mail = document.querySelectorAll('.mail');
 
     var icon_creation = document.createElement('div');
     icon_creation.className = 'icon';
-    mail[1].appendChild(icon_creation);
+    mail[2].appendChild(icon_creation);
 
     var nameEmail_creation = document.createElement('div');
     nameEmail_creation.className = 'nameEmail';
-    mail[1].appendChild(nameEmail_creation);
+    mail[2].appendChild(nameEmail_creation);
     var nameEmail = document.querySelectorAll('.nameEmail');
 
     var mailName_creation = document.createElement('p');
     mailName_creation.innerText = "staff@neopixel.studio";
-    nameEmail[1].appendChild(mailName_creation);
+    nameEmail[2].appendChild(mailName_creation);
 
     var numero_creation = document.createElement('div');
     numero_creation.className = 'numero';
-    footer[1].appendChild(numero_creation);
+    footer[2].appendChild(numero_creation);
     var numero = document.querySelectorAll('.numero');
 
     var icon2_creation = document.createElement('div');
     icon2_creation.className = 'icon';
-    numero[1].appendChild(icon2_creation);
+    numero[2].appendChild(icon2_creation);
 
     var number_creation = document.createElement('div');
     number_creation.className = 'number';
-    numero[1].appendChild(number_creation);
+    numero[2].appendChild(number_creation);
     var number = document.querySelectorAll('.number');
 
     var numberDigit_creation = document.createElement('p');
     numberDigit_creation.innerText = "+593 996639450";
-    number[1].appendChild(numberDigit_creation);
+    number[2].appendChild(numberDigit_creation);
 
     var copyright_creation = document.createElement('div');
     copyright_creation.className = 'copyright';
-    footer[1].appendChild(copyright_creation);
+    footer[2].appendChild(copyright_creation);
     var copyright = document.querySelectorAll('.copyright');
 
     var copyrightName_creation = document.createElement('p');
     copyrightName_creation.innerText = "copyright © 2022 NeoPixelStudio";
-    copyright[1].appendChild(copyrightName_creation);
+    copyright[2].appendChild(copyrightName_creation);
 
     document.querySelector('#enter').addEventListener('click', function() {
         location.href = './office.html'
@@ -117,11 +118,6 @@ function unlock() {
         $('.mouse_svg').hide(time_effect);
     };
     setTimeout(mouse_scroll, time_effect);
-
-    function ai_section_trigger() {
-        document.querySelector("#ai_trigger").style.display = "block";
-    };
-    setTimeout(ai_section_trigger, time_effect);
 
     document.getElementById("ai_trigger").addEventListener("click", function() {
         $("#ai_trigger").animate({
