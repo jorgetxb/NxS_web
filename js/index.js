@@ -16,6 +16,8 @@ document.getElementById("classic_button").addEventListener("click", function() {
         interactive_elems[i].style.display = "none";
     }
     document.getElementById("classic").style.display = "block";
+    document.getElementById("ai").style.display = "block";
+    document.getElementById("parallax").scrollIntoView();
     document.getElementById('parallax__layer__7').style.transform = 'translateZ(0px) scale(2)';
     document.getElementById('parallax__layer__7').style.top = '335vh';
 });
@@ -35,118 +37,70 @@ function trigger() {
     enter.className = 'bounce';
     document.getElementById('trigger').appendChild(enter);
 
-    var footer = document.createElement('div');
-    footer.id = 'footer';
-    document.getElementById('trigger').appendChild(footer);
+    var footer_creation = document.createElement('div');
+    footer_creation.className = 'footer';
+    document.getElementById('trigger').appendChild(footer_creation);
+    var footer = document.querySelectorAll('.footer');
 
-    var logoFooter = document.createElement('div');
-    logoFooter.id = 'logo-footer';
-    document.getElementById('footer').appendChild(logoFooter);
+    var logoFooter_creation = document.createElement('div');
+    logoFooter_creation.className = 'logo-footer';
+    footer[1].appendChild(logoFooter_creation);
+    var logoFooter = document.querySelectorAll('.logo-footer');
 
-    var mail = document.createElement('div');
-    mail.id = 'mail';
-    document.getElementById('footer').appendChild(mail);
+    var mail_creation = document.createElement('div');
+    mail_creation.className = 'mail';
+    footer[1].appendChild(mail_creation);
+    var mail = document.querySelectorAll('.mail');
 
-    var icon = document.createElement('div');
-    icon.className = 'icon';
-    document.getElementById('mail').appendChild(icon);
+    var icon_creation = document.createElement('div');
+    icon_creation.className = 'icon';
+    mail[1].appendChild(icon_creation);
 
-    var text = document.createElement('div');
-    text.id = 'text';
-    document.getElementById('mail').appendChild(text);
+    var nameEmail_creation = document.createElement('div');
+    nameEmail_creation.className = 'nameEmail';
+    mail[1].appendChild(nameEmail_creation);
+    var nameEmail = document.querySelectorAll('.nameEmail');
 
-    var mailName = document.createElement('p');
-    mailName.innerText = "staff@neopixel.studio";
-    document.getElementById('text').appendChild(mailName);
+    var mailName_creation = document.createElement('p');
+    mailName_creation.innerText = "staff@neopixel.studio";
+    nameEmail[1].appendChild(mailName_creation);
 
-    var numero = document.createElement('div');
-    numero.id = 'numero';
-    document.getElementById('footer').appendChild(numero);
+    var numero_creation = document.createElement('div');
+    numero_creation.className = 'numero';
+    footer[1].appendChild(numero_creation);
+    var numero = document.querySelectorAll('.numero');
 
-    var icon2 = document.createElement('div');
-    icon2.className = 'icon';
-    document.getElementById('numero').appendChild(icon2);
+    var icon2_creation = document.createElement('div');
+    icon2_creation.className = 'icon';
+    numero[1].appendChild(icon2_creation);
 
-    var number = document.createElement('div');
-    number.id = 'number';
-    document.getElementById('numero').appendChild(number);
+    var number_creation = document.createElement('div');
+    number_creation.className = 'number';
+    numero[1].appendChild(number_creation);
+    var number = document.querySelectorAll('.number');
 
-    var numberDigit = document.createElement('p');
-    numberDigit.innerText = "+593 996639450";
-    document.getElementById('number').appendChild(numberDigit);
+    var numberDigit_creation = document.createElement('p');
+    numberDigit_creation.innerText = "+593 996639450";
+    number[1].appendChild(numberDigit_creation);
 
-    var copyright = document.createElement('div');
-    copyright.id = 'copyright';
-    document.getElementById('footer').appendChild(copyright);
+    var copyright_creation = document.createElement('div');
+    copyright_creation.className = 'copyright';
+    footer[1].appendChild(copyright_creation);
+    var copyright = document.querySelectorAll('.copyright');
 
-    var copyrightName = document.createElement('p');
-    copyrightName.innerText = "copyright © 2022 NeoPixelStudio";
-    document.getElementById('copyright').appendChild(copyrightName);
+    var copyrightName_creation = document.createElement('p');
+    copyrightName_creation.innerText = "copyright © 2022 NeoPixelStudio";
+    copyright[1].appendChild(copyrightName_creation);
 
-    document.getElementById('enter').addEventListener('click', function() {
+    document.querySelector('#enter').addEventListener('click', function() {
         location.href = './office.html'
     });
 }
 
-//Show footer on classic mode
-
-function showFooter() {
-
-    var footer = document.createElement('div');
-    footer.id = 'footer';
-    document.getElementById('parallax').appendChild(footer);
-
-    var logoFooter = document.createElement('div');
-    logoFooter.id = 'logo-footer';
-    document.getElementById('footer').appendChild(logoFooter);
-
-    var mail = document.createElement('div');
-    mail.id = 'mail';
-    document.getElementById('footer').appendChild(mail);
-
-    var icon = document.createElement('div');
-    icon.className = 'icon';
-    document.getElementById('mail').appendChild(icon);
-
-    var text = document.createElement('div');
-    text.id = 'text';
-    document.getElementById('mail').appendChild(text);
-
-    var mailName = document.createElement('p');
-    mailName.innerText = "staff@neopixel.studio";
-    document.getElementById('text').appendChild(mailName);
-
-    var numero = document.createElement('div');
-    numero.id = 'numero';
-    document.getElementById('footer').appendChild(numero);
-
-    var icon2 = document.createElement('div');
-    icon2.className = 'icon';
-    document.getElementById('numero').appendChild(icon2);
-
-    var number = document.createElement('div');
-    number.id = 'number';
-    document.getElementById('numero').appendChild(number);
-
-    var numberDigit = document.createElement('p');
-    numberDigit.innerText = "+593 996639450";
-    document.getElementById('number').appendChild(numberDigit);
-
-    var copyright = document.createElement('div');
-    copyright.id = 'copyright';
-    document.getElementById('footer').appendChild(copyright);
-
-    var copyrightName = document.createElement('p');
-    copyrightName.innerText = "copyright © 2022 NeoPixelStudio";
-    document.getElementById('copyright').appendChild(copyrightName);
-
-}
-
-
 //Unblock page and effects
 function unlock() {
 
-    var time_effect = 1500;
+    var time_effect = 3000;
 
     document.getElementById("parallax").style.overflowY = "scroll";
     $(".choose").animate({
@@ -164,7 +118,18 @@ function unlock() {
     };
     setTimeout(mouse_scroll, time_effect);
 
-    /*document.getElementById("parallax").focus();*/
+    function ai_section_trigger() {
+        document.querySelector("#ai_trigger").style.display = "block";
+    };
+    setTimeout(ai_section_trigger, time_effect);
+
+    document.getElementById("ai_trigger").addEventListener("click", function() {
+        $("#ai_trigger").animate({
+            opacity: "0",
+        }, time_effect);
+
+        $('#ai_trigger').hide(time_effect);
+    })
 }
 
 //Global variables

@@ -1,30 +1,21 @@
 /****Fonts****/
 
-
-/*Press Start*/
-
+/*ANTICLIMAX*/
 @font-face {
     font-family: "pixel";
     src: url('../resourses/fonts/ANTICLIMAX.TTF');
 }
 
-
 /*Nothing you could do*/
-
 @font-face {
     font-family: "nothing";
     src: url('../resourses/fonts/NothingYouCouldDo-Regular.ttf');
 }
-
-
 /*Helvetica Light*/
-
 @font-face {
     font-family: "helvetical";
     src: url('../resourses/fonts/HelveticaNeueLTCom-UltLt.ttf');
 }
-
-
 /***/
 
 :root {
@@ -70,6 +61,13 @@ h2 span {
     font-size: 1.5rem;
     text-transform: lowercase;
     color: #782aff;
+}
+
+h3 {
+    font-family: 'nothing', sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+    color: white;
 }
 
 a {
@@ -128,6 +126,7 @@ p {
 }
 
 .title {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,6 +134,7 @@ p {
 }
 
 .subtitle {
+    position: relative;
     padding: 25px;
 }
 
@@ -162,6 +162,41 @@ p {
     .content {
         grid-template-columns: auto;
     }
+}
+
+#ai_trigger {
+    position: absolute;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 3vh auto auto auto;
+    justify-content: space-around;
+    align-items: end;
+    z-index: 4;
+    max-height: 25vh;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.new_services h3 {
+    margin: 3vh 0 0 0;
+    animation-name: scale_text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scale_text {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+#lottie_ai {
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto;
 }
 
 .step {
@@ -205,6 +240,7 @@ p {
 }
 
 .subtitle2 {
+    position: relative;
     text-align: center;
     margin: auto;
     max-width: 75%;
@@ -347,7 +383,7 @@ p {
 
 #whatsapp {
     display: none;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     margin: 20px;
@@ -361,6 +397,7 @@ p {
     border-radius: 50%;
     cursor: pointer;
     animation: turn 3s infinite;
+    z-index: 1;
 }
 
 @keyframes turn {
@@ -384,12 +421,13 @@ p {
     max-width: 500px;
     width: 90%;
     background-color: #095e54;
-    position: absolute;
+    position: fixed;
     border-radius: 25px;
     box-shadow: 10px 10px 20px black;
     bottom: 0;
     left: 0;
     margin: 20px;
+    z-index: 3;
 }
 
 @media (orientation: portrait) {
@@ -529,4 +567,306 @@ p {
     100% {
         transform: scale(1);
     }
+}
+
+/*New Section IA*/
+
+#ai {
+    display: none;
+    position: relative;
+    scroll-snap-align: end;
+}
+
+#ai h1,
+#ai h2,
+#ai h3,
+#ai p {
+    color: white;
+}
+
+.content2 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    max-width: 1080px;
+    margin: auto;
+    padding: 7.5vh 0;
+}
+
+@media (orientation: portrait) {
+    .content2 {
+        grid-template-columns: auto;
+        grid-gap: 30px;
+    }
+}
+
+.content_ai_section {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+#ai_avatar {
+    min-height: 15vh;
+    background-image:url("/resourses/img/classic/ia/person.png");
+    filter: drop-shadow(15px 15px 5px black);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+@media (orientation: portrait) {
+    #ai_avatar {
+        background-position: center center;
+
+    }
+}
+
+#lottie_avatar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: -25vh;
+}
+
+@media (orientation: portrait) {
+    #lottie_avatar {
+        margin-right: 0vh;
+        margin-left: 0vh;
+    }
+}
+
+.avatar_samples {
+    position: relative;
+    min-height: 25vh;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    33% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#avatar_sample1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/resourses/img/classic/ia/person_t1.png");
+    filter: drop-shadow(20px 20px 10px black);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: fade;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@media (orientation: portrait) {
+    #avatar_sample1 {
+        background-position: center center;
+
+    }
+}
+
+#avatar_sample2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/resourses/img/classic/ia/person_t2.png");
+    filter: drop-shadow(20px 20px 10px black);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: fade;
+    animation-delay: 3s;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@media (orientation: portrait) {
+    #avatar_sample2 {
+        background-position: center center;
+
+    }
+}
+
+#avatar_sample3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/resourses/img/classic/ia/person_t3.png");
+    filter: drop-shadow(20px 20px 10px black);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: fade;
+    animation-delay: 6s;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@media (orientation: portrait) {
+    #avatar_sample3 {
+        background-position: center center;
+
+    }
+}
+
+#ai_scale {
+    min-height: 15vh;
+    background-image:url("/resourses/img/classic/ia/scale_bottle.jpg");
+    filter: drop-shadow(15px 15px 5px black);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+@media (orientation: portrait) {
+    #ai_scale {
+        background-position: center center;
+
+    }
+}
+
+#lottie_scale {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+@media (orientation: portrait) {
+    #lottie_scale {
+        margin-top: -15vh;
+        margin-bottom: -15vh;
+        padding: 35%;
+    }
+}
+
+#ai_scale2 {
+    min-height: 30vh;
+    background-image:url("/resourses/img/classic/ia/bottle.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(30px 30px 10px black);
+    z-index: 1;
+}
+
+@media (orientation: portrait) {
+    #ai_scale2 {
+        background-position: center center;
+
+    }
+}
+
+.content3 .content_ai_section {
+    display: block;
+}
+
+.content3 {
+    position: relative;
+    min-height: 45vh;
+    display: block;
+    max-width: 1080px;
+    margin: auto;
+    padding: 7.5vh 0;
+}
+
+@media (orientation: portrait) {
+    .content3 {
+        margin: 20px;
+    }
+}
+
+#ai_colorize {
+    position: absolute;
+    min-height: 30vh;
+    width: 100%;
+    background-image:url("/resourses/img/classic/ia/black_white.jpg");
+    filter: drop-shadow(30px 30px 10px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#lottie_colorize {
+    position: absolute;
+    display: block;
+    max-width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 25vh;
+    z-index: 2;
+}
+
+#ai_colorize2 {
+    position: absolute;
+    min-height: 30vh;
+    width: 100%;
+    background-image:url("/resourses/img/classic/ia/colorize.jpg");
+    filter: drop-shadow(30px 30px 10px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content4 {
+    position: relative;
+    min-height: 60vh;
+    display: block;
+    max-width: 1080px;
+    margin: auto;
+    padding: 7.5vh 0;
+}
+
+#ai_transform {
+    position: absolute;
+    min-height: 45vh;
+    width: 100%;
+    margin-top: 45vh;
+    background-image:url("/resourses/img/classic/ia/transform1.png");
+    filter: drop-shadow(30px 30px 10px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#lottie_transform {
+    position: absolute;
+    display: block;
+    max-width: 200px;
+    left: 35%;
+    margin-left: -100px;
+    margin-top: -10vh;
+    z-index: 2;
+}
+
+@keyframes fade2 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#ai_transform2 {
+    position: absolute;
+    min-height: 45vh;
+    width: 100%;
+    margin-top: 45vh;
+    background-image:url("/resourses/img/classic/ia/transform2.jpg");
+    filter: drop-shadow(30px 30px 10px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    animation-name: fade2;
+    animation-duration: 7.5s;
+    animation-iteration-count: infinite;
 }

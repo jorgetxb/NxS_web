@@ -2,21 +2,20 @@
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 75%);
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.sky {
-    width: 75vh;
-    height: 75vh;
+.ss_space {
+    position: absolute;
+    width: 0;
+    height: 50vh;
     animation: sky 200000ms linear infinite;
 }
 
-.sky2 {
+.s_space {
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0vw;

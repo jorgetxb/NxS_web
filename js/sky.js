@@ -1,29 +1,29 @@
-//Creación de capa Sky
+var sky = document.querySelector('#sky');
 
+//Creación de capa ss_space
 var x = document.createElement("div");
-x.className = "sky";
-document.querySelector('#sky').appendChild(x);
+x.className = "ss_space";
+sky.insertBefore(x, sky.firstChild);
 
-//Creación de capa sky2  
+//Creación de capa s_space
 
 var w = document.createElement("div");
-w.className = "sky2";
-document.querySelector('#sky').appendChild(w);
+w.className = "s_space";
+sky.insertBefore(w, sky.firstChild);
 
 //Agregado de ShoothingStars  
 
 var y = document.createElement("div");
 y.className = "s_star";
-document.querySelector('.sky').appendChild(y);
+document.querySelector('.ss_space').appendChild(y);
 
 var v = document.createElement("div");
 v.className = "s_star";
-document.querySelector('.sky').appendChild(v);
+document.querySelector('.ss_space').appendChild(v);
 
 var u = document.createElement("div");
 u.className = "s_star";
-document.querySelector('.sky').appendChild(u);
-
+document.querySelector('.ss_space').appendChild(u);
 
 //Creación de Estrellas
 
@@ -33,7 +33,7 @@ var stars = 200;
 for (i = 0; i <= stars; i++) {
     z["star" + i] = document.createElement("div");
     z["star" + i].className = "star";
-    document.querySelector('.sky2').appendChild(z["star" + i]);
+    document.querySelector('.s_space').appendChild(z["star" + i]);
 }
 
 //Animación de Estrellas
