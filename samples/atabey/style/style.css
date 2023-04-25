@@ -593,6 +593,15 @@ td {
   background-color: var(--main_color);
 }
 
+@media only screen and (max-width: 768px) {
+  .footer #address,
+  .footer #number,
+  .footer #mail,
+  .footer .copyright {
+    transform: scale(0.75);
+  }
+}
+
 .logo3 {
   background-image: url("../src/Logo.svg");
   background-position: center;
