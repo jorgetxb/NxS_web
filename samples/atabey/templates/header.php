@@ -85,11 +85,11 @@
                 <a href="index.php">
                     <img class="logotipo" src="./src/Logo-text.svg" alt="">
                 </a>
-                <div class="menu-mobile">
+                <!-- <div class="menu-mobile">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </div> -->
             </div>
 
             <nav class="navegacion-principal">
