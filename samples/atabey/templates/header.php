@@ -37,12 +37,48 @@
 <body>
 
     <div class="hero-container">
-        <img src="./src/hero/pescador-y-manglares.jpg" alt="" class="hero_img" />
-        <img src="./src/hero/manos.jpg" alt="" class="hero_img" />
-        <img src="./src/hero/biodiversidad.jpg" alt="" class="hero_img" />
-        <img src="./src/hero/barahona.jpg" alt="" class="hero_img" />
-        <img src="./src/hero/campana.jpg" alt="" class="hero_img" />
+        <img src="./src/hero/pescador-y-manglares.jpg" alt="" class="hero_img"/>
+        <img src="./src/hero/manos.jpg" alt="" class="hero_img"/>
+        <img src="./src/hero/biodiversidad.jpg" alt="" class="hero_img"/>
+        <img src="./src/hero/barahona.jpg" alt="" class="hero_img"/>
+        <img src="./src/hero/campana.jpg" alt="" class="hero_img"/>
 
+        <div class="content_hero">
+
+            <nav class="social-media">
+                <a href="https://www.facebook.com/ciatabey/reviews/?ref=page_internal" target="_blank">
+                    <div class="social_bg">
+                        <img class="icon-rs" src="src/icons/facebook.svg" alt="facebook" />
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/centroatabey/" target="_blank">
+                    <div class="social_bg">
+                        <img class="icon-rs" src="src/icons/instagram.svg" alt="instagram" />
+                    </div>
+                </a>
+            </nav>
+
+            <div class="logo">
+                <img src="./src/Logo.svg" alt="" />
+            </div>
+
+            <div class="subtitle">
+                <h3>
+                    Fomentamos el desarrollo sostenible y la preservación del medio
+                    ambiente
+                </h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hero-container_m">
+        <img src="./src/hero/pescador-y-manglares_m.jpg" alt="" class="hero_img"/>
+        <img src="./src/hero/manos_m.jpg" alt="" class="hero_img"/>
+        <img src="./src/hero/biodiversidad_m.jpg" alt="" class="hero_img"/>
+        <img src="./src/hero/barahona_m.jpg" alt="" class="hero_img"/>
+        <img src="./src/hero/campana_m.jpg" alt="" class="hero_img"/>
 
         <div class="content_hero">
 

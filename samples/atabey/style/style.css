@@ -22,8 +22,31 @@
 }
 
 .hero-container {
+  display: none;
   height: 105vh;
   z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    display: block;
+    height: 105vh;
+    z-index: -1;
+  }
+}
+
+.hero-container_m {
+  display: block;
+  height: 105vh;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-container_m {
+    display: none;
+    height: 105vh;
+    z-index: -1;
+  }
 }
 
 .hero_img {
@@ -39,25 +62,42 @@
   animation: display 40s infinite;
 }
 
-@media (orientation: portrait) {
-  .hero_img {
-  overflow-x: hidden;
-  width: auto;
-  height: 110vh;
-  margin: auto;
-  }
-}
-
-img:nth-child(2) {
+.hero_img:nth-child(2) {
   animation-delay: 8s;
 }
-img:nth-child(3) {
+.hero_img:nth-child(3) {
   animation-delay: 16s;
 }
-img:nth-child(4) {
+.hero_img:nth-child(4) {
   animation-delay: 24s;
 }
-img:nth-child(5) {
+.hero_img:nth-child(5) {
+  animation-delay: 32s;
+}
+
+.hero_img_m {
+  position: absolute;
+  width: 100vw;
+  height: 110vh;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  animation: display_m 40s infinite;
+}
+
+.hero_img_m:nth-child(2) {
+  animation-delay: 8s;
+}
+.hero_img_m:nth-child(3) {
+  animation-delay: 16s;
+}
+.hero_img_m:nth-child(4) {
+  animation-delay: 24s;
+}
+.hero_img_m:nth-child(5) {
   animation-delay: 32s;
 }
 
@@ -449,16 +489,13 @@ td {
   overflow-x: hidden;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .index_info {
     width: 50%;
-    height: 60vh;
+    height: auto;
     box-shadow: none;
   }
   .index_info::-webkit-scrollbar {
-    display: none;
-  }
-  .index_info::-webkit-scrollbar-track {
     display: none;
   }
 }
