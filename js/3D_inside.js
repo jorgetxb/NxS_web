@@ -620,6 +620,7 @@ window.addEventListener("click", (event) => {
     const found = raycaster.intersectObjects(scene.children, true);
 
     let main = document.querySelector('#main');
+    let ai = document.querySelector('#ai');
     let marketing = document.querySelector('#marketing');
     let multimedia = document.querySelector('#multimedia');
     let portfolio = document.querySelector('#portfolio');
@@ -636,7 +637,8 @@ window.addEventListener("click", (event) => {
 
         switch (select_section) {
             case "tvScreen":
-                main.style.display = "flex";
+                main.style.display = "none";
+                ai.style.display = "flex";
                 marketing.style.display = "none";
                 examples2.style.display = "none";
                 multimedia.style.display = "none";
@@ -648,6 +650,7 @@ window.addEventListener("click", (event) => {
                 break;
             case "monitorSc1":
                 main.style.display = "none";
+                ai.style.display = "none";
                 marketing.style.display = "none";
                 examples2.style.display = "none";
                 multimedia.style.display = "none";
@@ -659,6 +662,7 @@ window.addEventListener("click", (event) => {
                 break;
             case "monitorSc2":
                 main.style.display = "none";
+                ai.style.display = "none";
                 marketing.style.display = "flex";
                 examples2.style.display = "block";
                 multimedia.style.display = "none";
@@ -670,6 +674,7 @@ window.addEventListener("click", (event) => {
                 break;
             case "monitorSc3":
                 main.style.display = "none";
+                ai.style.display = "none";
                 marketing.style.display = "none";
                 examples2.style.display = "none";
                 multimedia.style.display = "flex";
@@ -681,6 +686,7 @@ window.addEventListener("click", (event) => {
                 break;
             case "monitorSc4":
                 main.style.display = "none";
+                ai.style.display = "none";
                 marketing.style.display = "none";
                 examples2.style.display = "none";
                 multimedia.style.display = "none";

@@ -349,6 +349,10 @@ p {
     display: flex;
 }
 
+#ai {
+    display: none;
+}
+
 #marketing {
     display: none;
 }
@@ -638,3 +642,282 @@ p {
 
 
 /***/
+
+
+.content2 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    max-width: 1080px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+@media (orientation: portrait) {
+    .content2 {
+        grid-template-columns: auto;
+        grid-gap: 30px;
+    }
+}
+
+.content_ai_section {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+#ai_avatar {
+    min-height: 15vh;
+    background-image:url("/resourses/img/classic/ia/person.png");
+    filter: drop-shadow(15px 15px 5px black);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+@media (orientation: portrait) {
+    #ai_avatar {
+        background-position: center center;
+
+    }
+}
+
+#lottie_avatar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: -25vh;
+}
+
+@media (orientation: portrait) {
+    #lottie_avatar {
+        margin-right: 0vh;
+        margin-left: 0vh;
+    }
+}
+
+.avatar_samples {
+    position: relative;
+    min-height: 25vh;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    33% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#avatar_sample1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/resourses/img/classic/ia/person_t1.png");
+    filter: drop-shadow(20px 20px 10px black);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: fade;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@media (orientation: portrait) {
+    #avatar_sample1 {
+        background-position: center center;
+
+    }
+}
+
+#avatar_sample2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/resourses/img/classic/ia/person_t2.png");
+    filter: drop-shadow(20px 20px 10px black);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: fade;
+    animation-delay: 3s;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@media (orientation: portrait) {
+    #avatar_sample2 {
+        background-position: center center;
+
+    }
+}
+
+#avatar_sample3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/resourses/img/classic/ia/person_t3.png");
+    filter: drop-shadow(20px 20px 10px black);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: fade;
+    animation-delay: 6s;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@media (orientation: portrait) {
+    #avatar_sample3 {
+        background-position: center center;
+
+    }
+}
+
+#ai_scale {
+    min-height: 15vh;
+    background-image:url("/resourses/img/classic/ia/scale_bottle.jpg");
+    filter: drop-shadow(8px 8px 5px black);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+@media (orientation: portrait) {
+    #ai_scale {
+        background-position: center center;
+
+    }
+}
+
+#lottie_scale {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+@media (orientation: portrait) {
+    #lottie_scale {
+        margin-top: -15vh;
+        margin-bottom: -15vh;
+        padding: 35%;
+    }
+}
+
+#ai_scale2 {
+    min-height: 25vh;
+    background-image:url("/resourses/img/classic/ia/bottle.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(12px 12px 10px black);
+    z-index: 1;
+}
+
+@media (orientation: portrait) {
+    #ai_scale2 {
+        background-position: center center;
+
+    }
+}
+
+.content3 .content_ai_section {
+    display: block;
+}
+
+.content3 {
+    position: relative;
+    width: 100%;
+    display: block;
+    max-width: 1080px;
+    margin-bottom: 40vh;
+}
+
+#ai_colorize {
+    position: absolute;
+    min-height: 30vh;
+    width: 100%;
+    background-image:url("/resourses/img/classic/ia/black_white.jpg");
+    filter: drop-shadow(12px 12px 12px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#lottie_colorize {
+    position: absolute;
+    display: block;
+    max-width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 25vh;
+    z-index: 2;
+}
+
+#ai_colorize2 {
+    position: absolute;
+    min-height: 30vh;
+    width: 100%;
+    background-image:url("/resourses/img/classic/ia/colorize.jpg");
+    filter: drop-shadow(12px 12px 12px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content4 {
+    position: relative;
+    min-height: 60vh;
+    width: 100%;
+    display: block;
+    max-width: 1080px;
+    margin-top: 50px;
+}
+
+#ai_transform {
+    position: absolute;
+    min-height: 45vh;
+    width: 100%;
+    background-image:url("/resourses/img/classic/ia/transform1.png");
+    filter: drop-shadow(12px 12px 12px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#lottie_transform {
+    position: absolute;
+    display: block;
+    max-width: 200px;
+    left: 35%;
+    margin-left: -100px;
+    margin-top: -10vh;
+    z-index: 2;
+}
+
+@keyframes fade2 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#ai_transform2 {
+    position: absolute;
+    min-height: 45vh;
+    width: 100%;
+    background-image:url("/resourses/img/classic/ia/transform2.jpg");
+    filter: drop-shadow(12px 12px 12px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    animation-name: fade2;
+    animation-duration: 7.5s;
+    animation-iteration-count: infinite;
+}
