@@ -17,7 +17,6 @@ document.getElementById("classic_button").addEventListener("click", function() {
     }
     document.getElementById("classic").style.display = "block";
     document.getElementById("ai").style.display = "block";
-    document.querySelector("#ai_trigger").style.display = "block";
     document.getElementById("parallax").scrollIntoView();
     document.getElementById('parallax__layer__7').style.transform = 'translateZ(0px) scale(2)';
     document.getElementById('parallax__layer__7').style.top = '335vh';
@@ -112,6 +111,7 @@ function unlock() {
 
     function arrow_down() {
         document.querySelector(".down_arrow").style.display = "flex";
+        document.querySelector("#ai_trigger").style.display = "block";
         $(".down_arrow").animate({
             opacity: "0",
         }, time_effect2);
