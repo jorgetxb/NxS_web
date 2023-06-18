@@ -205,8 +205,9 @@ span {
     }
 }
 
-.mouse_svg {
+.down_arrow {
     position: absolute;
+    flex-direction: column;
     display: none;
     top: 0;
     bottom: 0;
@@ -214,12 +215,11 @@ span {
     right: 0;
     margin: auto auto 10vh auto;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
     z-index: 4;
     max-width: 30vw;
     max-height: 20vh;
     opacity: 1;
-    overflow: hidden;
 }
 
 

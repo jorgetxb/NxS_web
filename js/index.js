@@ -101,30 +101,31 @@ function trigger() {
 //Unblock page and effects
 function unlock() {
 
-    var time_effect = 3000;
+    var time_effect1 = 3000;
+    var time_effect2 = 25000;
 
     document.getElementById("parallax").style.overflowY = "scroll";
     $(".choose").animate({
         opacity: "0",
-    }, time_effect);
-    $('.choose').hide(time_effect);
+    }, time_effect1);
+    $('.choose').hide(time_effect1);
 
-    function mouse_scroll() {
-        document.querySelector(".mouse_svg").style.display = "flex";
-        $(".mouse_svg").animate({
+    function arrow_down() {
+        document.querySelector(".down_arrow").style.display = "flex";
+        $(".down_arrow").animate({
             opacity: "0",
-        }, time_effect);
+        }, time_effect2);
 
-        $('.mouse_svg').hide(time_effect);
+        $('.down_arrow').hide(time_effect2);
     };
-    setTimeout(mouse_scroll, time_effect);
+    setTimeout(arrow_down, time_effect1);
 
     document.getElementById("ai_trigger").addEventListener("click", function() {
         $("#ai_trigger").animate({
             opacity: "0",
-        }, time_effect);
+        }, time_effect1);
 
-        $('#ai_trigger').hide(time_effect);
+        $('#ai_trigger').hide(time_effect1);
     })
 }
 

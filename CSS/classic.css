@@ -81,7 +81,7 @@
 }
 
 .new_services h3 {
-    margin: 3vh 0 0 0;
+    margin: 4vh 0 0 0;
     animation-name: scale_text;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -89,7 +89,7 @@
 
 @keyframes scale_text {
     0% {transform: scale(1);}
-    50% {transform: scale(1.1);}
+    50% {transform: scale(1.2);}
     100% {transform: scale(1);}
 }
 
