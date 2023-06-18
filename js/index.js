@@ -101,7 +101,7 @@ function trigger() {
 function unlock() {
 
     var time_effect1 = 3000;
-    var time_effect2 = 25000;
+    var time_effect2 = 20000;
 
     document.getElementById("parallax").style.overflowY = "scroll";
     $(".choose").animate({

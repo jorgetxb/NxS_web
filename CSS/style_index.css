@@ -217,8 +217,8 @@ span {
     justify-content: space-around;
     align-items: center;
     z-index: 4;
-    max-width: 30vw;
-    max-height: 20vh;
+    max-width: 75vw;
+    max-height: 25vh;
     opacity: 1;
 }
 
