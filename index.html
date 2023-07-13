@@ -24,6 +24,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <title>Neo Pixel Studio</title>
     <script src="./js/start.js"></script>
 </head>
@@ -70,6 +71,27 @@
             </div>
         </div>
     </div>
+
+<div id="popup_container">
+    <div id="popup_container_sub_lf">
+        <div id="popup_fordown">
+            <h2 id="text_bubble">Ya pasaste por nuestros servicios clásicos, ¿No?, no te preocupes, te llevamos.
+                <br><br> <u>Presiona en la nave.</u>
+            </h2>
+            <div id="close_popup">
+                <svg viewbox="0 0 20 20">
+                    <path class="close" d="M 5,5 L 15,15 M 15,5 L 5,15" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div id="popup_container_sub_rt" onclick="scrollToServices()">
+        <div>
+            <lottie-player src="./resourses/img/classic/spaceship.json" background="transparent" speed="1" loop autoplay
+                id="lottie_spaceship"></lottie-player>
+        </div>
+    </div>
+</div>
 
     <!-- section6 -->
     <div id="sky">
@@ -500,5 +522,19 @@
 <!-- sky -->
 <script src="./js/sky.js"></script>
 <!---->
+
+<script>
+    /*function checkScrollEnd() {
+        var divHeight = document.getElementById("sky").offsetHeight;
+        console.log(divHeight);
+        var documentHeight = document.documentElement.scrollHeight;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  
+        if (scrollTop + windowHeight >= documentHeight) {
+        showPopup();
+        // Puedes realizar otras acciones aquí, como enviar datos al servidor, etc.
+        }
+    }*/
+</script>
 
 </html>
