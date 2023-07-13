@@ -17,7 +17,7 @@
     position: relative;
     background-color: var(--background);
     z-index: 3;
-    margin-top: 335vh;
+    margin-top: 330vh;
 }
 
 .title {
@@ -59,6 +59,36 @@
     }
 }
 
+#popup_container2 {
+    display: grid;
+    position: relative;
+    width: 100vw;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+@media (orientation: portrait) {
+    #popup_container2 {
+        grid-template-columns: auto;
+        grid-row: auto auto;
+    } 
+}
+
+#text_bubble2 {
+    font-size: 3vh;
+    color: white;
+    max-width: 250px;
+    width: 75%;
+    float: right;
+}
+
+@media (orientation: portrait) {
+    #text_bubble2 {
+        margin: auto;
+        float: none;
+    }
+}
+
 #popup_container {
     display: none;
     position: absolute;
@@ -92,9 +122,8 @@
 }
 
 #text_bubble {
-    font-size: 1.75vh;
-    padding: 0% 25% 15% 5%;
-    transform: rotate(-30deg);
+    font-size: 2vh;
+    padding: 15% 25% 15% 10%;
 }
 
 #close_popup {
@@ -104,7 +133,7 @@
     background-color: white;
     border: solid 1px black;
     border-radius: 100%;
-    margin-top: -65%;
+    margin-top: -75%;
     cursor: pointer;
 }
 

@@ -129,6 +129,8 @@ function unlock() {
     })
 }
 
+
+
 //Popup scroll to Classic services
 
 function hide_popup() {
@@ -146,12 +148,17 @@ function hide_popup() {
 function scrollToServices() {
     document.getElementById('popup_container_sub_lf').style.opacity = "0";
     document.getElementById('popup_container').style.backgroundColor = "unset";
-    var section = document.getElementById("about_us");
-    section.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    document.getElementById("about_us").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     setTimeout(hide_popup, 1500);
 };
 
 document.getElementById('popup_container_sub_lf').addEventListener('click', hide_popup);
+
+
+//Popup scroll to new services... soon
+
+/****************************/
+/****************************/
 
 
 //Global variables
