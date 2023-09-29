@@ -55,6 +55,7 @@
     max-width: 300px;
     max-height: 300px;
     margin: auto;
+    cursor: pointer;
 }
 
 @media (orientation: landscape) {
