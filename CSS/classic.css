@@ -599,12 +599,14 @@
 .content_ai_section {
     width: 100%;
     height: 100%;
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 #ai_avatar {
-    min-height: 15vh;
+    width: 100%;
+    height: 75%;
     background-image:url("/resourses/img/classic/ia/person.png");
     filter: drop-shadow(15px 15px 5px black);
     background-position: right center;
@@ -712,7 +714,8 @@
 }
 
 #ai_scale {
-    min-height: 15vh;
+    height: 50%;
+    width: 100%;
     background-image:url("/resourses/img/classic/ia/scale_bottle.jpg");
     filter: drop-shadow(15px 15px 5px black);
     background-position: right center;
@@ -744,7 +747,8 @@
 }
 
 #ai_scale2 {
-    min-height: 30vh;
+    height: 100%;
+    width: 100%;
     background-image:url("/resourses/img/classic/ia/bottle.jpg");
     background-position: left center;
     background-repeat: no-repeat;
@@ -816,9 +820,10 @@
 }
 
 .content4 {
+    display: flex;
+    align-items: center;
     position: relative;
     min-height: 60vh;
-    display: block;
     max-width: 1080px;
     margin: auto;
     padding: 7.5vh 0;
@@ -828,12 +833,26 @@
     position: absolute;
     min-height: 45vh;
     width: 100%;
-    margin-top: 45vh;
     background-image:url("/resourses/img/classic/ia/transform1.png");
     filter: drop-shadow(30px 30px 10px black);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#ai_transform2 {
+    position: absolute;
+    min-height: 45vh;
+    width: 100%;
+    background-image:url("/resourses/img/classic/ia/transform2.jpg");
+    filter: drop-shadow(30px 30px 10px black);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    animation-name: fade2;
+    animation-duration: 7.5s;
+    animation-iteration-count: infinite;
 }
 
 #lottie_transform {
@@ -851,19 +870,3 @@
     50% { opacity: 0; }
     100% { opacity: 1; }
   }
-
-#ai_transform2 {
-    position: absolute;
-    min-height: 45vh;
-    width: 100%;
-    margin-top: 45vh;
-    background-image:url("/resourses/img/classic/ia/transform2.jpg");
-    filter: drop-shadow(30px 30px 10px black);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
-    animation-name: fade2;
-    animation-duration: 7.5s;
-    animation-iteration-count: infinite;
-}
