@@ -605,6 +605,7 @@
 }
 
 #ai_avatar {
+    min-height: 20vh;
     width: 100%;
     height: 75%;
     background-image:url("/resourses/img/classic/ia/person.png");
@@ -714,6 +715,7 @@
 }
 
 #ai_scale {
+    min-height: 15vh;
     height: 50%;
     width: 100%;
     background-image:url("/resourses/img/classic/ia/scale_bottle.jpg");
@@ -747,6 +749,7 @@
 }
 
 #ai_scale2 {
+    min-height: 25vh;
     height: 100%;
     width: 100%;
     background-image:url("/resourses/img/classic/ia/bottle.jpg");
