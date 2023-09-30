@@ -129,35 +129,6 @@ function unlock() {
     })
 }
 
-
-
-//Popup scroll to Classic services
-
-function hide_popup() {
-    document.getElementById('popup_container_sub_lf').style.opacity = "0";
-    document.getElementById('popup_container').style.backgroundColor = "unset"
-    $("#popup_container_sub_rt").animate({
-        opacity: "0",
-    }, 1000);
-    $('#popup_container').hide(1000);
-    setTimeout(function() {
-        document.getElementById('popup_container').style.zIndex = "-1";
-    }, 1100);
-};
-
-function scrollToServices() {
-    document.getElementById('popup_container_sub_lf').style.opacity = "0";
-    document.getElementById('popup_container').style.backgroundColor = "unset";
-    document.getElementById("about_us").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-    setTimeout(hide_popup, 1500);
-};
-
-document.getElementById('popup_container_sub_lf').addEventListener('click', hide_popup);
-
-
-//Popup scroll to new services... soon
-
-/****************************/
 /****************************/
 
 

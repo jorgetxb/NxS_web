@@ -14,15 +14,16 @@ window.onload = function() {
 
     //Pop up for avoided zones space
 
-    document.getElementById("sky").addEventListener("scroll", checkScrollTop);
+    /*document.getElementById("sky").addEventListener("scroll", checkScrollTop);*/
 
     // Función para mostrar el popup
-    function showPopuptoDown() {
+    /*function showPopuptoDown() {
         var popup = document.getElementById('popup_container');
         popup.style.display = 'grid';
-    }
+    }*/
 
     // Función para comprobar si se ha llegado al punto más alto de la página
+    /*
     function checkScrollTop() {
         var skyposition = document.getElementById("sky").scrollTop;
         var skyheigth = document.getElementById("sky").offsetHeight;
@@ -32,6 +33,7 @@ window.onload = function() {
             }, 5000);
         }
     }
+    */
 
     //Pop up for avoided zones land
     //Por crear.......
