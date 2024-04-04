@@ -716,6 +716,7 @@ window.addEventListener("click", (event) => {
             case "portfolio_2":
             case "portfolio_3":
                 main.style.display = "none";
+                ai.style.display = "none";
                 marketing.style.display = "none";
                 examples2.style.display = "none";
                 multimedia.style.display = "none";
@@ -729,6 +730,7 @@ window.addEventListener("click", (event) => {
             case "dev_2":
             case "dev_3":
                 main.style.display = "none";
+                ai.style.display = "none";
                 marketing.style.display = "flex";
                 examples2.style.display = "block";
                 multimedia.style.display = "none";
@@ -742,6 +744,7 @@ window.addEventListener("click", (event) => {
             case "mult_2":
             case "mult_3":
                 main.style.display = "none";
+                ai.style.display = "none";
                 marketing.style.display = "none";
                 examples2.style.display = "none";
                 multimedia.style.display = "flex";
@@ -755,6 +758,7 @@ window.addEventListener("click", (event) => {
             case "about_us_2":
             case "about_us_3":
                 main.style.display = "none";
+                ai.style.display = "none";
                 marketing.style.display = "none";
                 examples2.style.display = "none";
                 multimedia.style.display = "none";
